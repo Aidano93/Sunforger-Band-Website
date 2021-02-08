@@ -1,10 +1,10 @@
-# CPNT260 - A3 
+# CPNT260 - A4 
 
 Aidan O'Reilly
 
-Repo: https://github.com/Aidano93/cpnt260-a3
+Repo: https://github.com/Aidano93/cpnt260-a4
 
-Github Page: https://aidano93.github.io/cpnt260-a3/
+Github Page: https://aidano93.github.io/cpnt260-a4/
 
 ## Context:
 
@@ -16,13 +16,16 @@ The goal of this site is to provide some important information to potential fans
 
 ## Notes:
 
-### Refactors from A2:
-- **Added social media links in main nav and footer**
-- **Added gallery of 12 images related to Sunforger**
-- fixed a size issue with the size of the logo in the header
+### Refactors from A3:
+- Converted one page site into multi-page with a hero image landing page as the new index
+- Added a contact page which includes an email submission form and an embedded google map
 
-### Gallery
-- Images for this gallery were received in various aspect ratios and did not fit with each other. Rather than edit them in pixlr, I chose to set the height and width of each image in CSS and then use object-fit:cover. I chose a 1:1 ratio for the images and think they translate fairly well.
+### Hero Page:
+- I struggled to find an image from what Sunforger provided that was high enough resolution to serve as an appropriate hero image. I am aware that the image used has a bit of a 'blown up' look, but I decided it was my best option. That said, I do feel like the 'photo grainy' quality of the image works with their aesthetic and doesn't take away from the site too much. 
+
+### Contact Page:
+- I used [Formspree](https://formspree.io/) to set up the contact form.
+- Making the embedded map responsive proved to be difficult. I ended up using a set of CSS rulesets sourced online (linked in my attributes). I did not intend for the map to be full size, but the responsiveness did not seem to work properly otherwise. The full size map doesn't look bad, just not what I originally wanted.
 
 ## Attributions:
 
@@ -33,6 +36,7 @@ The goal of this site is to provide some important information to potential fans
 - spencer, chris, piper all provided by Sunforger
 - chris-crest, spencer-crest, piper-crest all derived from shape assets listed below in Logo section
 - all gallery images provided by Sunforger
+- Hero Image provided by Sun
 
 ### Logo:
 
@@ -48,4 +52,6 @@ The goal of this site is to provide some important information to potential fans
 
 - List style image size by Stedy67 via [stackoverflow](https://stackoverflow.com/questions/7775594/css-list-style-image-size)
 - Vitaly and Jess provided assistance in tracking down the issue with my logo size when viewed on mobile
+- Xia assisted me with embedding google maps
+- map responsiveness by Valentin Garcia via [OSTraining](https://www.ostraining.com/blog/coding/responsive-google-maps/)
 
