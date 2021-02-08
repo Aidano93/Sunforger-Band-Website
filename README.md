@@ -26,6 +26,7 @@ The goal of this site is to provide some important information to potential fans
 ### Contact Page:
 - I used [Formspree](https://formspree.io/) to set up the contact form.
 - Making the embedded map responsive proved to be difficult. I ended up using a set of CSS rulesets sourced online (linked in my attributes). I did not intend for the map to be full size, but the responsiveness did not seem to work properly otherwise. The full size map doesn't look bad, just not what I originally wanted.
+- Map marker is our old studio in Montreal.
 
 ## Attributions:
 
