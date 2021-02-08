@@ -1,0 +1,718 @@
+body {
+  margin: 0;
+
+  font-size: clamp(12px, 3vw, 18px) !important;
+}
+
+body {
+  box-sizing: border-box;
+
+  display: flex;
+  flex-flow: column nowrap;
+
+  background-color: #dddecb;
+
+  font-family: Rasa, serif;
+  color: black;  
+}
+
+p {
+  max-width: 95ch;
+}
+
+/* HERO SECTION*/
+
+.hero {
+  display: flex;
+  flex-direction: column;
+
+  background-image: url(../media/images/sf-hero.jpg);
+  background-color: black;
+  background-position: center; 
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  min-height: 100vh;
+  margin: 0;
+}
+
+.hero-nav {
+  display: none;
+}
+
+#hero-hamburger {
+  display: block;
+  color: white;
+  font-size: 3rem;
+  margin-left: 0.5rem;
+}
+
+.hero-header {
+  display: grid;
+  grid-template-columns: 5rem 6rem 1fr;
+}
+
+#hero-logo {
+  height: 5rem;
+  width: 5rem;
+  min-width: 10%;
+}
+
+.hero-main-p {
+  display: block;
+  font-family: Arvo;
+  text-transform: uppercase;
+  font-size: 2.5rem;
+  color: white;
+  text-shadow: black 2px 2px;
+
+  margin: 30px;
+}
+
+
+
+.landing-wrapper {
+  margin: auto;
+}
+
+.landing {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.5rem;
+
+  min-width: auto;
+
+  margin-bottom: 9rem;
+  padding: 3rem 0em;
+
+  background-color:transparent;
+  
+}
+
+.heading-tag {
+  margin: auto;
+}
+
+.landing p {
+  color: white;
+  text-align: center;
+
+  font-family: rasa, serif;
+}
+
+h1 {
+  display: block;
+
+  font-size: 3.5em;
+  font-family: Arvo, serif;
+  font-weight: 200;
+  text-align: center;
+  align-self: center;
+
+  border: white double 0.25rem;
+
+  margin: 0 0.5rem;
+}
+
+.music-link {
+
+  display: inline;
+  letter-spacing: 0.30em;
+  color: white;
+  text-shadow: black 1px 1px;
+  text-decoration: none;
+
+  padding: 0.5rem;
+  margin: 0.3rem;
+}
+
+.music-link:active {
+  color: black;
+  transition: 0.4s;
+}
+
+.sf-album {
+  padding: 0em;
+  margin: 1rem;
+
+  max-width: 27rem;
+  width: 50%;
+  height: auto;
+
+  object-fit: cover;
+
+  border: 0.2rem solid black;
+}
+
+/* Hero nav media query*/
+
+@media screen and (min-width: 1000px) {
+  .hero-nav {
+    display: block;
+    color: white;
+  }
+  
+  .hero-nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: right;
+  }
+  
+  .hero-nav li{
+    border-bottom: none;
+  }
+  
+  .hero-nav a {
+    color: white;
+    font-size: 1.25rem;
+    text-decoration: none;
+  }
+
+  .hero-nav a:hover {
+    background-color: transparent;
+    color: white;
+
+  }
+  
+  #hero-logo {
+    height: 7rem;
+    width: 7rem;
+    min-width: 10%;
+  }
+
+  #hero-hamburger {
+    display: none;
+  }
+}
+
+
+/* HEADER*/
+
+.main-header {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-start;
+
+  background-image: url(../media/images/laura-skinner-brickwall-unsplash.jpg);
+  background-color: #dddecb;
+  background-blend-mode: luminosity;
+  object-fit: cover;
+
+  max-height: max-content;
+  min-height: min-content;
+
+  padding: 0%;
+}
+
+.main-header p {
+  font-family: Arvo;
+  text-transform: uppercase;
+  font-size: 2.5rem;
+  color: #a84d57;
+  text-shadow: black 2px 2px;
+
+  margin: 30px;
+
+  align-self: flex-end;
+}
+
+.sf-logo {
+  height: 8rem;
+  width: 8rem;
+  min-width: 15%;
+}
+
+/*NAV*/
+
+ul {
+  padding: 0;
+  margin: 0 1.5rem;
+  /* margin-bottom: 2rem; */
+}
+
+nav li {
+  list-style-type: none;
+  
+  border-bottom: black solid 2px;
+  
+  text-align: center;
+}
+
+li a {
+  display: block;
+
+  text-decoration: none;
+  text-transform: uppercase;
+  text-align: left;
+
+  
+  color: black;
+  font-size: 1.50rem;
+
+  padding: 0.3rem;
+}
+
+nav ul a:active {
+  background-color: black;
+  color: white;
+
+  transition: 0.2s;
+}
+
+#sm-li {
+  display: none;
+}
+
+.social-media {
+  display: none;
+}
+
+.social-media li {
+  border-bottom: none;
+  
+}
+
+
+/* horizontal nav media query */
+
+@media screen and (min-width: 1000px) {
+  nav {
+    /* margin-bottom: 1rem; */
+  
+    border-top: 0.2rem solid black;
+  }
+  
+  
+  
+  nav ul {
+    display: flex;
+    justify-content: space-around;
+    flex-flow: wrap ;
+  
+    padding: 0;
+  }
+  
+  nav li {
+    list-style-type: none;
+    display: inline-block;
+
+    border-bottom: none;
+  }
+  
+  nav ul a {
+    display: block;
+    flex: 0 1 auto;
+
+    
+    
+    color: black;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+  
+    padding: 0.75rem;
+    margin: 0rem;  
+  }
+  
+  nav ul a:hover {
+    text-decoration: underline;
+    color: #a84d57;
+    transition: 0.4s;
+
+    background-color: #dddecb;
+  }
+  
+  nav ul a:active {
+    color: black;
+    transition: 0.4s; 
+  }
+
+  #sm-li {
+    display: flex;
+  }
+  
+  .social-media {
+    display: flex;
+    justify-content: space-between; 
+  }
+
+  .social-media li a:hover {
+    text-decoration: underline;
+    color: #a84d57;
+    transition: 0.4s;
+
+    background-color: #dddecb;
+  }
+  
+  /** button removed for this iteration**/
+
+  /* .cta-button {
+    flex: 3 1 auto;
+  
+    background-color: #C0727B;
+    color: white;
+  
+    border-radius: 0.5rem;
+    border: 0.35rem double black;
+    box-shadow: 0 2px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+  }
+  
+  .cta-button:hover {
+    background-color: #A94C57;
+    color:white;
+    text-decoration: none;
+    transition: 0.4s;
+  }
+  
+  .cta-button:active{
+    color: black;
+  } */
+  
+} 
+
+.social-media li a {
+  font-size: 2.5rem;
+
+  margin: 1rem;
+  margin-top: 0.7rem;
+  padding: 0;
+
+}
+
+
+/*MAIN*/
+
+main {
+  flex: 1 0 auto;
+
+  min-height: 100%;
+
+  margin: 0 1.5rem;
+
+  
+}
+
+h2 {
+  font-family: Rasa, serif;
+  font-size: 2.5rem;
+  text-align: center;
+  
+  /* margin-bottom: 4.5rem; */
+}
+
+
+
+.sections {
+  margin-bottom: 8rem;
+
+  min-height: 85vh;
+}
+
+/*bio*/
+
+.bio p {
+  text-align: left;
+  font-size: 1.5rem;
+  margin: auto;
+}
+
+.bio img {
+  display: block;
+  margin: auto;
+  margin-top: 3rem;
+
+  width: 50rem;
+  height: 20rem;
+  max-width: 100%;
+
+  object-fit: cover;
+
+  border: 0.2rem solid black;
+}
+
+/* card section - members */
+
+.members {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(285px, 1fr));  
+  gap: 2rem;
+
+
+  justify-items: center;
+  align-items: center;
+
+  margin: 0 1rem;
+
+  background-image: url(../media/images/sf-brick.png);
+  background-size: 1000px;
+  object-fit: contain;
+}
+
+
+.members h3{
+  font-size: 1.75rem;
+
+  margin-bottom: 0.25rem;
+}
+
+.card {
+  display: block;
+
+  margin: 0.5rem 0rem;
+}
+
+.card .profile {
+  object-fit: cover;
+
+  width: 285px;
+  height: 470px;
+
+  border: black 8px solid;
+  border-top: black 10px solid;
+  border-bottom: black 10px solid;
+
+  box-shadow: 10px 10px 3px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.members p {
+  font-size: 1.5rem;
+  text-align: center;
+
+  margin: 0.5rem;
+}
+
+.crest {
+  display: block;
+  width: 8rem;
+
+  margin: auto;
+}
+
+/*tour*/
+
+.tour-dates {
+  display: block;
+
+  list-style: none;
+  text-align: center;
+
+  padding: 0rem;
+}
+
+.tour-dates li {
+  font-size: 1.7rem;
+  text-align: center;
+
+  display: block;
+
+  margin: 2rem;
+  margin-left: 1rem;
+}
+
+.tour-dates li::before {
+  content: '';
+  display: inline-block;
+
+  height: 1rem;
+  width: 1rem;
+
+  background-image: url(../media/logos/sunforger-logo.svg);
+  background-size: contain;
+  background-repeat: no-repeat
+}
+
+/*press*/
+
+blockquote {
+  font-size: 1.5rem;
+
+  border-left: 5px solid #c0c5bc;
+  border-radius: 1%;
+
+  background-color: rgb(214, 216, 196);
+
+  padding: 1rem;
+}
+
+blockquote::before {
+  content: open-quote;
+  font-size: 80px;
+  opacity: 0.5;
+}
+
+blockquote::after {
+  content: close-quote;
+  font-size: 80px;
+  opacity: 0.5;
+}
+
+.review p {
+  font-size: 1.25rem;
+  text-align: center;
+}
+
+.review p a {
+  color: #96414b
+}
+
+.review p a:visited {
+  color: #96414b
+}
+
+/*Gallery*/
+
+.gallery-wrapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));  
+  gap: 1rem;
+
+  justify-items: center;
+}
+
+.gallery-wrapper figure img {
+  width: 20rem;
+  height: 20rem;
+
+  margin: auto;
+
+  object-fit: cover;
+
+  border: 0.3rem solid black;
+}
+
+/* figure {
+  background-color: darkgray;
+} */
+
+figcaption {
+  min-width: 20rem;
+  max-width: 20rem;
+
+  font-size: 1.3rem;
+}
+
+/* CONTACT SECTION*/
+
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-items: left;
+
+  gap: 0.4rem;
+}
+
+
+
+input {
+  border: black solid 0.15rem;
+
+  font-size: 1rem;
+}
+
+textarea {
+  font-size: 1rem;
+
+  width: 20rem;
+  height: 10rem;
+ 
+  max-width: 95%;
+
+  border: black solid 0.2rem;
+}
+
+button {
+  font-family: arvo, serif;
+  font-size: 1rem;
+  width: 5rem;
+
+  color: black;
+  background-color: transparent;
+  border: black solid 0.2rem;
+}
+
+.map-section {
+  margin-bottom: 3rem;
+}
+
+.map {
+  overflow:hidden;
+  padding-bottom:56.25%;
+  position:relative;
+  height:0;
+
+  margin-top: 2rem;
+
+  border: black solid 0.2rem;
+}
+
+.map iframe {
+  left:0;
+  top:0;
+  height:100%;
+  width:100%;
+  position:absolute;
+}
+
+form {
+  display: inline;
+}
+
+
+
+/*return to top link*/
+
+#return {
+  display: block;
+  text-align: center;
+
+  margin-bottom: 2rem;
+
+  color: black;
+  font-size: 1.5rem;
+
+  text-decoration: none;
+  text-transform: uppercase
+
+}
+
+#return:hover {
+  text-decoration: underline;
+  color: #a94c57;
+  transition: 0.4s;
+}
+
+/*FOOTER*/
+
+footer {
+  flex-shrink: 0;
+
+  height: 10rem;
+
+  background-image: url(../media/images/sf-brick.png);
+  background-size: 1000px;
+  object-fit: contain;
+
+  display: flex;
+  justify-content: space-evenly;
+
+}
+
+footer p {
+  font-size: 1.25rem;
+}
+
+.sm-links {
+  margin-top: 0.5rem;
+}
+
+.sm-links ul {
+  display: flex;
+  justify-content: space-evenly;
+
+
+}
+
+.sm-links ul li {
+  list-style: none;
+}
