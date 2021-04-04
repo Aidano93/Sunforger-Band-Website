@@ -2,11 +2,9 @@
 
 Aidan O'Reilly
 
-Repo: https://github.com/Aidano93/
-Sunforger-Band-Website 
+Repo: https://github.com/Aidano93/Sunforger-Band-Website 
 
-Github Page: https://aidano93.github.io/
-Sunforger-Band-Website /
+Github Page: https://aidano93.github.io/Sunforger-Band-Website /
 
 ## Context:
 
