@@ -2,9 +2,9 @@
 
 Aidan O'Reilly
 
-Repo: https://github.com/Aidano93/cpnt260-a4
+Repo: https://github.com/Aidano93/Sunforger-Band-Website 
 
-Github Page: https://aidano93.github.io/cpnt260-a4/
+Github Page: https://aidano93.github.io/Sunforger-Band-Website /
 
 ## Context:
 
