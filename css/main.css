@@ -20,6 +20,12 @@ p {
   max-width: 95ch;
 }
 
+.main-container {
+  background-image: url(../media/images/sf-brick.png);
+  background-size: 1000px;
+  border-bottom: 2px solid black;
+}
+
 /* HERO SECTION*/
 
 .hero {
@@ -315,12 +321,6 @@ nav ul a:active {
 /* horizontal nav media query */
 
 @media screen and (min-width: 1000px) {
-  nav {
-    /* margin-bottom: 1rem; */
-  
-    border-top: 0.2rem solid black;
-  }
-  
   
   
   nav ul {
@@ -383,30 +383,6 @@ nav ul a:active {
     background-color: #dddecb;
   }
   
-  /** button removed for this iteration**/
-
-  /* .cta-button {
-    flex: 3 1 auto;
-  
-    background-color: #C0727B;
-    color: white;
-  
-    border-radius: 0.5rem;
-    border: 0.35rem double black;
-    box-shadow: 0 2px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
-  }
-  
-  .cta-button:hover {
-    background-color: #A94C57;
-    color:white;
-    text-decoration: none;
-    transition: 0.4s;
-  }
-  
-  .cta-button:active{
-    color: black;
-  } */
-  
 } 
 
 .social-media li a {
@@ -424,11 +400,9 @@ nav ul a:active {
 main {
   flex: 1 0 auto;
 
-  min-height: 100%;
+  min-height: 100vh;
 
-  margin: 0 1.5rem;
-
-  
+  margin: 0 1.5rem;  
 }
 
 h2 {
@@ -443,8 +417,6 @@ h2 {
 
 .sections {
   margin-bottom: 8rem;
-
-  min-height: 85vh;
 }
 
 /*bio*/
@@ -728,17 +700,16 @@ footer {
 
   height: 10rem;
 
-  background-image: url(../media/images/sf-brick.png);
-  background-size: 1000px;
   object-fit: contain;
 
   display: flex;
   justify-content: space-evenly;
 
+
 }
 
 footer p {
-  font-size: 1.25rem;
+  font-size: clamp(12px, 3vw, 20px);
 }
 
 .sm-links {
